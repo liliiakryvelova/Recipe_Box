@@ -1,10 +1,10 @@
-# _{Vendor and Order Tracker}_
+# _{An application to keep track of the machine repairs}_
 
 #### By _**{Liliia Kryvelova}**_
 
-https://github.com/liliiakryvelova/VendorAndOrder.git
+https://github.com/liliiakryvelova/Factory.git
 
-#### _{You've been referred by Pierre to his friend Claire who is the owner of a hair salon called Eau Claire's Salon. She has contracted you out to create an MVC web application to help her manage her employees (stylists) and their clients. Claire should be able to add a list of stylists working at the salon, and for each stylist, add clients who see that stylist. The stylists have specific specialties, so each client can only see (belong to) a single stylist.}_
+#### _{You are to build an MVC web application to manage their engineers, and the machines they are licensed to fix. The factory manager should be able to add a list of engineers, a list of machines, and specify which engineers are licensed to repair which machines. There should be a many-to-many relationship between Engineers and Machines. An engineer can be licensed to repair (belong to) many machines (such as the Dreamweaver, the Bubblewrappinator, and the Laughbox) and a machine can have many engineers licensed to repair it.}_
 
 ## Technologies Used
 
@@ -13,22 +13,16 @@ https://github.com/liliiakryvelova/VendorAndOrder.git
 
 ## Description
 
-* _We want to establish a one-to-many relationship between the Clien and Stylist entities where many Clients are associated with one Employee(Stylist). It means that each Client entity points to an Employee. This can be achieved by including a reference navigation property Stylist in the Client entity class. In the same time, the Clients table includes foreign key._
+* _We want to establish a many-to-many relationship between the Engineer and Machine entities where many Engineers are associated with many Machines. It means that each Engineer entity points to an Machine. When we create a many-to-many relationship between two classes, we need to include a navigation property. This is simply a property on  one class that includes a reference to a related class. Our navigation property is called JoinEntities and it is a collection of EngineerMachine._
 
-* _Another convention is to include a collection navigation property in the Stylist entity as shown below._
+* _Before we build our project and use Entity to create and run our migrations, we'll have to do a bit more configuration to our application. Create a file called DesignTimeDbContextFactory.cs inside of the Models folder with the specific code._
 
-* _The Client entity includes foreign key property StylistId with its reference property Stylist. Thi will create one-to-many  relationship with NotNull foreign key column in the Clients table, as shown below._
-
-* _The homepage of the app at the root path should be a splash page welcoming Eau Claire's Salon and allow adding a new Stylist, add a new Client._
-
-* _The vendors page should contain a link to a page presenting Pierre with a form he can fill out to create a new Vendor. After the form is submitted, the new Vendor object should be saved into a static List and Pierre should be routed back to the homepage._
-
-* _Pierre should be able to click a Vendor's name and go to a new page that will display all of that Vendor's orders._
-
-* _As the salon owner, I need to be able to see a list of all stylists._
-* _As the salon owner, I need to be able to select a stylist, see their details, and see a list of all clients that belong to that stylist._
-* _As the salon owner, I need to add new stylists to our system when they are hired._
-* _As the salon owner, I need to be able to add new clients to a specific stylist. I should not be able to add a client if no stylists have been added._
+* _As the factory manager, I need to be able to see a list of all engineers, and I need to be able to see a list of all machines._
+* _As the factory manager, I need to be able to select a engineer, see their details, and see a list of all machines that engineer is licensed to repair. I also need to be able to select a machine, see its details, and see a list of all engineers licensed to repair it._
+* _As the factory manager, I need to add new engineers to our system when they are hired. I also need to add new machines to our system when they are installed._
+* _As the factory manager, I should be able to add new machines even if no engineers are employed. I should also be able to add new engineers even if no machines are installed._
+* _As the factory manager, I need to be able to add or remove machines that a specific engineer is licensed to repair. I also need to be able to modify this relationship from the other side, and add or remove engineers from a specific machine._
+* _User should be able to navigate to a splash page that lists all engineers and machines. Users should be able to click on an individual engineer or machine to see all the engineers/machines that belong to it._
 
 ## Setup/Installation Requirements
 
@@ -46,4 +40,4 @@ https://github.com/liliiakryvelova/VendorAndOrder.git
 ## License
 
 
-Copyright (c) _7-30-2022_ _Liliia Kryvelova(s)_
+Copyright (c) _8-13-2022_ _Liliia Kryvelova(s)_
