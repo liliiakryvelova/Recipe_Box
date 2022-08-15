@@ -18,7 +18,12 @@ namespace Factory.Controllers
 
     public ActionResult Index()
     {
-      return View(_db.Engineer.ToList());
+      return View(_db.Engineers.ToList());
+    }
+
+    public ActionResult AllEngineerMachine()
+    {
+      return View(_db.EngineerMachine.ToList());
     }
 
     public ActionResult Details(int id)
