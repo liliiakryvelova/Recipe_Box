@@ -53,3 +53,4 @@ C:\Users\lilia\Epicodus\ASP.NET\Factory\Factory\obj\Debug\net5.0\ToDoList.dll
 C:\Users\lilia\Epicodus\ASP.NET\Factory\Factory\obj\Debug\net5.0\ref\ToDoList.dll
 C:\Users\lilia\Epicodus\ASP.NET\Factory\Factory\obj\Debug\net5.0\ToDoList.pdb
 C:\Users\lilia\Epicodus\ASP.NET\Factory\Factory\obj\Debug\net5.0\ToDoList.genruntimeconfig.cache
+C:\Users\lilia\Epicodus\ASP.NET\Factory\Factory\obj\Debug\net5.0\Razor\Views\EngineerMachines\Index.cshtml.g.cs
