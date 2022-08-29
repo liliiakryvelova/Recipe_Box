@@ -1,10 +1,10 @@
-# _{An application to keep track of the recipes and categories}_
+# An application to keep track of the recipes and categories
 
-#### By _**{Liliia Kryvelova}**_
+#### By: Liliia Kryvelova
 
 https://github.com/liliiakryvelova/Recipe_Box.git
 
-#### _{You are to build an MVC web application to manage their recipes, and the categories they are licensed to tag.}_
+#### You are to build an MVC web application to manage their recipes, and the categories they are licensed to tag.
 
 ## Technologies Used
 
